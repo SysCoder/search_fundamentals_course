@@ -38,7 +38,7 @@
             {% endif %}
           </div>
           <div class="text-sm mt-2">
-          {% if hit._source.department[0] %}
+          {% if hit._source.department and hit._source.department[0] %}
           <div>
             <span class="search-result-header">Department</span>:
               {{ hit._source.department[0] }}
